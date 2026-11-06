@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff7fa;
+    color: #39313a;
+    line-height: 1.7;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.converter {
+    width: 100%;
+    max-width: 620px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(90, 45, 65, 0.09);
+}
+
+.eyebrow {
+    color: #b45f83;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 1.3;
+    margin-bottom: 8px;
+}
+
+.intro {
+    color: #777;
+    margin-bottom: 28px;
+    font-size: 14px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 12px 0 7px;
+}
+
+input, select {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #e5d5dd;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+    color: #39313a;
+    background: #fff;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #b45f83;
+    box-shadow: 0 0 0 3px rgba(180, 95, 131, 0.12);
+}
+
+button {
+    margin-top: 22px;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #b45f83;
+    color: white;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #914568;
+}
+
+.error {
+    min-height: 24px;
+    margin-top: 10px;
+    color: #c03955;
+    font-size: 13px;
+}
+
+.results {
+    margin-top: 25px;
+}
+
+.results h2 {
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.result-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.result-card {
+    padding: 16px 12px;
+    border-radius: 9px;
+    background: #fff1f6;
+    text-align: center;
+}
+
+.result-card span {
+    display: block;
+    color: #80566a;
+    font-size: 12px;
+    margin-bottom: 7px;
+}
+
+.result-card strong {
+    font-size: 18px;
+    color: #a34f75;
+    overflow-wrap: anywhere;
+}
+
+.note {
+    color: #888;
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+@media (max-width: 520px) {
+    .converter {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .result-grid {
+        grid-template-columns: 1fr;
+    }
+}
